@@ -19,10 +19,10 @@
 1. With Docker
     - Build docker container
 
-    ```bash docker build -t food-services .  ```
+    ```bash docker build -t npu-food .  ```
 
     - Run container
-    ```bash docker run -it -p 5000:5000 food-services```
+    ```bash docker run -it -p 5000:5000 npu-food```
 
     - visit ``` localhost:5000```
 

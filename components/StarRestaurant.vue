@@ -20,7 +20,7 @@
 
                     <v-card-actions>
                         <v-btn color="green lighten-2" text @click="addItemToCart(starFood)">
-                            Add to Cart
+                            加入购物车
                         </v-btn>
                     </v-card-actions>
                 </v-card>

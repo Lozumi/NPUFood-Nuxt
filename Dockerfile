@@ -1,15 +1,15 @@
 FROM node
 
 # create destination directory
-RUN mkdir -p /usr/src/food-services
-WORKDIR /usr/src/food-services
+RUN mkdir -p /usr/src/npu-food
+WORKDIR /usr/src/npu-food
 
 # update and install dependency
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y git
 
 # copy the app, note .dockerignore
-COPY . /usr/src/food-services/
+COPY . /usr/src/npu-food/
 RUN npm install
 
 # build necessary, even if no static files are needed,
