@@ -1,17 +1,17 @@
 <template>
     <div>
-        <specials :specials="specials"></specials>
-        <beverages :beverages="beverages"></beverages>
+        <starFoods :starFoods="starFoods"></starFoods>
+        <cloudFoods :cloudFoods="cloudFoods"></cloudFoods>
     </div>
 </template>
 
 <script>
-import specials from '../components/Specials.vue';
-import beverages from '../components/Beverages.vue';
+import starFoods from '../components/StarRestaurant.vue';
+import cloudFoods from '../components/CloudRestaurant.vue';
 import { mapMutations } from 'vuex';
 
 export default {
-    components: { specials, beverages },
+    components: { starFoods, cloudFoods },
     data() {
         return {
         }
@@ -20,11 +20,11 @@ export default {
         products() {
             return this.$store.state.products.products;
         },
-        beverages() {
-            return this.products.filter(item => item.tag === 'beverage');
+        cloudFoods() {
+            return this.products.filter(item => item.tag === 'cloudFood');
         },
-        specials() {
-            return this.products.filter(item => item.tag === 'special');
+        starFoods() {
+            return this.products.filter(item => item.tag === 'starFood');
         },
     },
 

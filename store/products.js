@@ -1,10 +1,10 @@
 export const state = () => ({
     products: [
-        {id: 1, tag: 'beverage', text: 'Urn of hot water', description: 'Lipton, herbal teas, brewed Arabica coffee regular or decaffeinated', price: 3.00, image: 'https://images.unsplash.com/photo-1487168791452-17942644e6f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80',},
-        {id: 2, tag: 'beverage', text: 'Hot Chocolate', description: 'Lipton, herbal teas, brewed Arabica coffee regular or decaffeinated', price: 2.50, image: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',},
-        {id: 3, tag: 'beverage', text: 'Bottle of juice(10 oz.)', description: 'Lipton, herbal teas, brewed Arabica coffee regular or decaffeinated', price: 5.00, image: 'https://images.unsplash.com/photo-1546173159-315724a31696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',},
-        {id: 4, tag: 'special', text: 'Grilled Chicken Breast', description: 'Barbecue chicken consists of chicken parts or entire chickens that are barbecued, grilled or smoked.', price: 6.99, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png'},
-        {id: 5, tag: 'special', text: 'Balsamic Chicken', description: 'Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.', price: 8.99, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png'},
+        {id: 1, tag: 'cloudFood', text: '柠檬鱼', description: '云餐一楼出品，爱鱼~', price: 12.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',},
+        {id: 2, tag: 'cloudFood', text: '西洋套餐', description: '云餐咖啡馆出品，太高级了没吃过。', price: 998.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',},
+        {id: 3, tag: 'cloudFood', text: '铁锅炖大鹅', description: '云餐没有，鹅鹅鹅，曲项向天歌~', price: 30.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png',},
+        {id: 4, tag: 'starFood', text: '鸡蛋灌饼', description: '学府餐厅出品，晚归学子的最爱！', price: 6.50, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png'},
+        {id: 5, tag: 'starFood', text: '泡泡鸡', description: '南餐厅三楼出品，永远怀念。', price: 13.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png'},
     ]
 });
 

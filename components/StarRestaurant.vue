@@ -1,25 +1,25 @@
 <template>
     <div class="px-2">
-        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-md font-semibold text-green-700 mr-2">Beverages (sold by the gallon, serves approximately 15 people)</span>
+        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-md font-semibold text-green-700 mr-2">星天苑餐厅</span>
         <div class="flex flex-wrap justify-start items-center -mx-4">
-            <div v-for="beverage in beverages" :key="beverage.id" class="w-full md:w-1/3 px-2">
+            <div v-for="starFood in starFoods" :key="starFood.id" class="w-full md:w-1/3 px-2">
                 <v-card :loading="loading" class="mx-auto my-3">
                     <v-img height="100"
-                    :src="beverage.image"
+                    :src="starFood.image"
                     ></v-img>
 
                     <v-card-title>
-                        {{ beverage.text }}
+                        {{ starFood.text }}
                         <v-spacer></v-spacer>
-                        <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2">$ {{ beverage.price }}</span>
+                        <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2">$ {{ starFood.price }}</span>
                     </v-card-title>
 
                     <v-card-text>
-                        <div>{{ beverage.description }}</div>
+                        <div>{{ starFood.description}}</div>
                     </v-card-text>
 
                     <v-card-actions>
-                        <v-btn color="green lighten-2" text @click="addItemToCart(beverage)">
+                        <v-btn color="green lighten-2" text @click="addItemToCart(starFood)">
                             Add to Cart
                         </v-btn>
                     </v-card-actions>
@@ -50,15 +50,15 @@ export default {
         }
     },
     props: {
-        beverages: {
+        starFoods: {
             type: Array,
             required: true
         }
     },
     methods: {
-        addItemToCart(beverage) {
+        addItemToCart(starFood) {
             setTimeout(() => {
-                this.$store.dispatch('cart/addProductToCart', beverage)
+                this.$store.dispatch('cart/addProductToCart', starFood)
             }, 200);
             this.snackbar = true;
             this.snacktext = 'Item Added to cart successfully!';
