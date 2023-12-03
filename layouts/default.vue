@@ -26,6 +26,48 @@
 
         <v-main class="bg-fixed" style="background-image: url('/npu-motto.png'); background-size: 40%; background-position: left top;">
             <v-container>
+                <v-row class="justify-center">
+                    <v-col cols="12">
+                        <v-card>
+                            <v-card-text class="text-center">
+                                <p class="nputitle">
+                                    <strong>西北工业大学校园配送平台</strong>
+                                </p>
+                            </v-card-text>
+                            <v-divider></v-divider>
+                            <v-card-text class="text-center">
+                                <p>
+                                    西北工业大学软件工程导论课程（2023-2024秋）的大作业项目，由Dobug小组作品出品。<br>
+                                    项目前端采用Vue 3框架，引入Tailwind CSS美化组件，利用Nuxt、Vuex技术实现快速构建。<br>
+                                    因时间、技术有限，仅实现了部分前端功能（主页、餐厅菜单、购物车），餐厅、菜品使用字符串存储。
+                                </p>
+                            </v-card-text>
+                            <v-divider></v-divider>
+                            <v-card-actions class="justify-center">
+                                <div class="flex items-center">
+                                    <div class="github-badge" style="margin-right: 10px;">
+                                        <a href="https://www.github.com/Lozumi" target="_blank" title="©2018-2022 洛衣Lozumi" class="white-text">
+                                            <span class="badge-subject">Copyright</span><span class="badge-value bg-tianyi">©2018-2023 Lozumi</span>
+                                        </a>
+                                    </div>
+                                    <div class="github-badge" style="margin-right: 10px;">
+                                        <a href="http://beian.miit.gov.cn/" target="_blank" title="鄂ICP备 19021090号-1" class="white-text">
+                                            <span class="badge-subject">鄂ICP备</span><span class="badge-value bg-miku">19021090号-1</span>
+                                        </a>
+                                    </div>
+                                    <div class="github-badge">
+                                        <a href="./" target="_blank" title="版本 V1.0.0" class="white-text">
+                                            <span class="badge-subject">部署版本</span><span class="badge-value bg-orange">V1.0.0</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </v-card-actions>
+                        </v-card>
+                    </v-col>
+                </v-row>
+            </v-container>
+            <v-container>
                 <nuxt/>
             </v-container>
         </v-main>
@@ -92,3 +134,85 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.nputitle{
+    justify-content: center;
+    font-size: 24px;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+
+/*底部页脚*/
+.github-badge {
+    display: inline-block;
+    border-radius: 4px;
+    text-shadow: none;
+    font-size: 12px;
+    color: #fff;
+    line-height: 15px;
+    background-color: #abbac3;
+    margin-bottom: 5px
+}
+
+.github-badge .badge-subject {
+    display: inline-block;
+    background-color: #4d4d4d;
+    padding: 4px 4px 4px 6px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.github-badge .badge-value {
+    display: inline-block;
+    padding: 4px 6px 4px 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.github-badge .bg-blue {
+    background-color: #007ec6
+}
+
+.github-badge .bg-orange {
+    background-color: #ffa500
+}
+
+.github-badge .bg-red {
+    background-color: #f00
+}
+
+.github-badge .bg-green {
+    background-color: #3bca6e
+}
+
+.github-badge .bg-purple {
+    background-color: #ab34e9
+}
+
+.github-badge .bg-grey, .github-badge .bg-gray {
+    background-color: #808080;
+}
+
+.github-badge .bg-lightgrey, .github-badge .bg-lightgray {
+    background-color: #C0C0C0;
+}
+
+.github-badge .bg-tianyi {
+    background-color: #66CCFF;
+}
+
+.github-badge .bg-miku {
+    background-color: #39C5BB;
+}
+
+.white-text {
+    color: white;
+}
+
+</style>
