@@ -18,5 +18,13 @@ export const restaurants = [
             { id: 3, text: '铁锅炖大鹅', description: '云餐没有，鹅鹅鹅，曲项向天歌~', price: 30.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
         ],
     },
-    // Add more restaurants as needed
+    {
+        tag: 'seaFood',
+        restaurantTag: '海天苑餐厅',
+        foods: [
+            { id: 1, text: '小鸡炖蘑菇', description: '海餐应该有吧（？）。', price: 15.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
+            { id: 1, text: '航小天营养套餐', description: '海餐没有，但海餐二楼真的有航小天！XD', price: 9998.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' }
+        ]
+    }
+    // 可添加其他餐厅
 ];
