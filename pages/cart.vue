@@ -7,7 +7,7 @@
                 <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn @click="clearAllItemsFromCart" v-bind="attrs" v-on="on" icon>
-                            <v-icon>全部清除</v-icon>
+                            <v-icon>clear_all</v-icon>
                         </v-btn>
                     </template>
                     <span>清除所有商品</span>
@@ -46,7 +46,7 @@
 
                         <v-list-item-action>
                             <v-btn @click="removeItemFromCart(item)" icon>
-                                <v-icon color="red lighten-1">删除</v-icon>
+                                <v-icon color="red lighten-1">delete</v-icon>
                             </v-btn>
                         </v-list-item-action>
                     </v-list-item>
@@ -63,14 +63,14 @@
                         </v-list-item-content>
 
                         <v-list-item-action>
-                            $ {{ cartTotal }}
+                            ￥ {{ cartTotal }}
                         </v-list-item-action>
                     </v-list-item>
                 </v-list>
             </v-card-text>
             <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn v-if="itemsInCart.length > 0" color="green" text>Proceed to Pay</v-btn>
+                <v-btn v-if="itemsInCart.length > 0" color="green" text>支付</v-btn>
             </v-card-actions>
         </v-card>
         <v-snackbar v-model="snackbar" :timeout="2000">
