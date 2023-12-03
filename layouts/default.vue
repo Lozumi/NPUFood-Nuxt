@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-app-bar color="#3A8FB7" app absolute elevate-on-scroll>
-            <img src="../static/npu-logo.png" alt="NPU"  class="ml-2" style="width: 24px; height: 24px">
+            <img src="../static/npu-logo.png" alt="NPU"  class="ml-2" style="width: 36px; height: 36px">
             <v-toolbar-title class="white--text text-center mx-2"><strong>工大美食</strong></v-toolbar-title>
             <img class="mr-2" src="../static/MdiFood.svg" alt="NPU Food" style="width: 24px; height: 24px">
             <v-spacer/>
