@@ -13,8 +13,8 @@ export default {
   head: {
     // titleTemplate: '%s - ' + process.env.npm_package_name,
     // title: process.env.npm_package_name || 'NPU Food',
-      titleTemplate: '%s - 新一代配送平台',
-      title: '工大美食',
+      titleTemplate: '%s - 食堂订餐配送系统',
+      title: '食在工大',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

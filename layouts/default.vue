@@ -2,7 +2,7 @@
     <v-app>
         <v-app-bar color="#3A8FB7" app absolute elevate-on-scroll>
             <img src="../static/npu-logo.png" alt="NPU"  class="ml-2" style="width: 36px; height: 36px">
-            <v-toolbar-title class="white--text text-center mx-2"><strong>工大美食</strong></v-toolbar-title>
+            <v-toolbar-title class="white--text text-center mx-2"><strong>食在工大</strong></v-toolbar-title>
             <img class="mr-2" src="../static/MdiFood.svg" alt="NPU Food" style="width: 24px; height: 24px">
             <v-spacer/>
             <v-btn to="/" icon class="mx-2">
@@ -31,7 +31,7 @@
                         <v-card>
                             <v-card-text class="text-center">
                                 <p class="nputitle">
-                                    <strong>西北工业大学校园配送平台</strong>
+                                    <strong>食在工大——食堂订餐配送系统</strong>
                                 </p>
                             </v-card-text>
                             <v-divider></v-divider>
