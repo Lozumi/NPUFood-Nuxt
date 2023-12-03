@@ -6,7 +6,7 @@
 
 <script>
 import Restaurant from '~/components/Restaurant.vue';
-import { restaurants } from '~/store/restaurants';
+import { restaurants } from '~/config/restaurants';
 
 export default {
     components: { Restaurant },
