@@ -67,7 +67,7 @@ export default {
                 this.$store.dispatch('cart/addProductToCart', food);
             }, 200);
             this.snackbar = true;
-            this.snacktext = 'Item Added to cart successfully!';
+            this.snacktext = '已添加到购物车!';
         },
     },
 };
