@@ -26,7 +26,7 @@
 
                         <v-list-item-content>
                             <v-list-item-title>
-                                {{ item.text }} - ${{ item.price }}
+                                {{ item.text }} - ￥{{ item.price }}
                             </v-list-item-title>
                             <v-list-item-subtitle>
                                 {{ item.description }}
