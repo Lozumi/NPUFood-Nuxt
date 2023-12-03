@@ -92,17 +92,6 @@
     |   |-- cart.vue 购物车
     |   |-- index.vue 餐厅及菜品
     |   |-- README.md
-    |-- static 图片
-    |   |-- cart-light.png
-    |   |-- favicon.ico
-    |   |-- icon.png
-    |   |-- main-dark.png
-    |   |-- main-light-items-in-cart.png
-    |   |-- main-light.png
-    |   |-- MdiFood.svg
-    |   |-- npu-logo.png
-    |   |-- npu-motto.png
-    |   |-- sw.js
     |-- store 存储
         |-- cart.js
         |-- index.js
