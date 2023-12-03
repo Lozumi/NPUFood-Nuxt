@@ -1,32 +1,19 @@
 <template>
     <div>
-        <starFoods :starFoods="starFoods"></starFoods>
-        <cloudFoods :cloudFoods="cloudFoods"></cloudFoods>
+        <Restaurant v-for="restaurant in restaurants" :key="restaurant.tag" :foods="restaurant.foods" :restaurantTag="restaurant.restaurantTag" />
     </div>
 </template>
 
 <script>
-import starFoods from '../components/StarRestaurant.vue';
-import cloudFoods from '../components/CloudRestaurant.vue';
-import { mapMutations } from 'vuex';
+import Restaurant from '~/components/Restaurant.vue';
+import { restaurants } from '~/store/restaurants';
 
 export default {
-    components: { starFoods, cloudFoods },
+    components: { Restaurant },
     data() {
         return {
-        }
+            restaurants,
+        };
     },
-    computed: {
-        products() {
-            return this.$store.state.products.products;
-        },
-        cloudFoods() {
-            return this.products.filter(item => item.tag === 'cloudFood');
-        },
-        starFoods() {
-            return this.products.filter(item => item.tag === 'starFood');
-        },
-    },
-
-}
+};
 </script>
