@@ -27,7 +27,7 @@ export const restaurants = [
         foods:[
             { id: 1, text: '地三鲜', description: '北餐厅民族餐厅出品，正宗东北地三鲜'， price: 3.00, image:'https://p.sda1.dev/14/ac2d731112d84b2e0e5dfa3b13bd2d39/地三鲜.jpg'},
             { id: 2, text: '腊肉茄子煲', description: '北餐厅出品，茄子腊肉煲，只要有腊肉就有家的味道', price: 6.00 image:  'https://p.sda1.dev/14/23dc83dd7236a900e3b5662ac740e702/腊肉茄子煲.jpg'},
-            { id: 3, text: '蜜汁叉烧肉', description: '南餐厅出品，南京叉烧味', price: 6.00 image:'https://p.sda1.dev/14/769228260ba7be85019005ef1cc1720c/蜜汁叉烧肉.png'},
+            { id: 3, text: '蜜汁叉烧肉', description: '北餐厅出品，南京叉烧味', price: 6.00 image:'https://p.sda1.dev/14/769228260ba7be85019005ef1cc1720c/蜜汁叉烧肉.png'},
         ],
     },
     {
