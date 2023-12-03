@@ -5,8 +5,8 @@ export const restaurants = [
         tag: 'StarFood',
         restaurantTag: '星天苑南餐厅',
         foods: [
-            { id: 1, text: '鸡蛋灌饼', description: '学府餐厅出品，晚归学子的最爱！', price: 6.50, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
-            { id: 2, text: '泡泡鸡', description: '南餐厅三楼出品，永远怀念。', price: 13.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
+            { id: 1, text: '鸡蛋灌饼', description: '学府餐厅出品，晚归学子的最爱！', price: 6.50, image: 'https://p.sda1.dev/14/61ed47806ff23ccf161d1df748d52531/鸡蛋灌饼.jpg' },
+            { id: 2, text: '泡泡鸡', description: '南餐厅三楼出品，永远怀念。', price: 13.00, image: 'https://p.sda1.dev/14/a6583990d523d4f074220f825c767057/泡泡鸡.jpg' },
         ],
     },
     {
@@ -22,11 +22,10 @@ export const restaurants = [
         tag: 'CloudFood',
         restaurantTag: '云天苑餐厅',
         foods: [
-            { id: 1, text: '柠檬鱼', description: '云餐一楼出品，爱鱼~', price: 12.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
-            { id: 2, text: '西洋套餐', description: '云餐咖啡馆出品，太高级了没吃过。', price: 998.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
-            { id: 3, text: '铁锅炖大鹅', description: '云餐没有，鹅鹅鹅，曲项向天歌~', price: 30.00, image: 'https://cdn.vuetifyjs.com/images/cards/cooking.png' },
-            { id: 4, text:'盐水鸭', description:'不知道写什么了，放一点家乡美食吧', price:8.00 , image:'https://p.sda1.dev/14/526016ca66dc9a3de2f89a41f54e2350/盐水鸭.jpg'},
-            { id: 5, text:'蛋炒饭', description:'酱油炒饭，很香', price: 10.00 , image:'https://p.sda1.dev/14/dec63ab0f02847301d1f61df97bedaa0/蛋炒饭.jpg'},
+            { id: 1, text: '柠檬鱼', description: '云餐一楼出品，爱鱼~', price: 12.00, image: 'https://p.sda1.dev/14/24e269cb8c81babd6c0bcf8114b5660e/柠檬鱼.jpg' },
+            { id: 2, text: '西洋套餐', description: '云餐咖啡馆出品，太高级了没吃过。', price: 998.00, image: 'https://p.sda1.dev/14/2b120231ff9b97a621a51f938f92f686/西洋套餐.jpg' },
+            { id: 3, text:'盐水鸭', description:'不知道写什么了，放一点家乡美食吧', price:8.00 , image:'https://p.sda1.dev/14/526016ca66dc9a3de2f89a41f54e2350/盐水鸭.jpg'},
+            { id: 4, text:'蛋炒饭', description:'酱油炒饭，很香', price: 10.00 , image:'https://p.sda1.dev/14/dec63ab0f02847301d1f61df97bedaa0/蛋炒饭.jpg'},
         ],
     },
     {
