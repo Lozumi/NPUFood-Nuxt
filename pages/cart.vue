@@ -2,21 +2,21 @@
     <div class="">
         <v-card raised>
             <v-card-title class="headline">
-                Your Cart
+                您的购物车
                 <v-spacer></v-spacer>
                 <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                         <v-btn @click="clearAllItemsFromCart" v-bind="attrs" v-on="on" icon>
-                            <v-icon>clear_all</v-icon>
+                            <v-icon>全部清除</v-icon>
                         </v-btn>
                     </template>
-                    <span>Clear all items</span>
+                    <span>清除所有商品</span>
                 </v-tooltip>
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
                 <div class="text-center" v-if="itemsInCart.length === 0">
-                    <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-md font-semibold text-yellow-700">Your cart is empty! You must not be hungry yet!</span>
+                    <span class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-md font-semibold text-yellow-700">您的购物车当前是空的！您一定还不饿吧！</span>
                 </div>
                 <v-list v-else two-line subheader>
                     <v-list-item v-for="item in itemsInCart" :key="item.title">
@@ -46,7 +46,7 @@
 
                         <v-list-item-action>
                             <v-btn @click="removeItemFromCart(item)" icon>
-                                <v-icon color="red lighten-1">delete</v-icon>
+                                <v-icon color="red lighten-1">删除</v-icon>
                             </v-btn>
                         </v-list-item-action>
                     </v-list-item>
@@ -58,7 +58,7 @@
                     <v-list-item>
                         <v-list-item-content>
                             <v-list-item-title>
-                                Total:
+                                总计：
                             </v-list-item-title>
                         </v-list-item-content>
 
@@ -77,7 +77,7 @@
             {{ snacktext }}
             <template v-slot:action="{ attrs }">
                 <v-btn color="blue" text v-bind="attrs" @click="snackbar = false">
-                    Close
+                    关闭
                 </v-btn>
             </template>
         </v-snackbar>
