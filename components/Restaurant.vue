@@ -28,7 +28,7 @@
             {{ snacktext }}
             <template v-slot:action="{ attrs }">
                 <v-btn color="blue" text v-bind="attrs" @click="snackbar = false">
-                    Close
+                    关闭
                 </v-btn>
             </template>
         </v-snackbar>
