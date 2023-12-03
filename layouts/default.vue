@@ -175,32 +175,8 @@ export default {
     border-bottom-right-radius: 4px
 }
 
-.github-badge .bg-blue {
-    background-color: #007ec6
-}
-
 .github-badge .bg-orange {
     background-color: #ffa500
-}
-
-.github-badge .bg-red {
-    background-color: #f00
-}
-
-.github-badge .bg-green {
-    background-color: #3bca6e
-}
-
-.github-badge .bg-purple {
-    background-color: #ab34e9
-}
-
-.github-badge .bg-grey, .github-badge .bg-gray {
-    background-color: #808080;
-}
-
-.github-badge .bg-lightgrey, .github-badge .bg-lightgray {
-    background-color: #C0C0C0;
 }
 
 .github-badge .bg-tianyi {
