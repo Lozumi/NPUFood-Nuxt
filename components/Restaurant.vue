@@ -13,7 +13,7 @@
                         <v-spacer></v-spacer>
                         <span
                             class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2"
-                        >$ {{ food.price }}</span>
+                        >￥ {{ food.price }}</span>
                     </v-card-title>
 
                     <v-card-text>
