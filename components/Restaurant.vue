@@ -1,15 +1,19 @@
 <template>
     <div class="px-2">
-        <span class="inline-block bg-green-200 rounded-full px-3 py-1 text-md font-semibold text-green-700 mr-2">{{ restaurantTag }}</span>
+    <span
+        class="inline-block bg-green-200 rounded-full px-3 py-1 text-md font-semibold text-green-700 mr-2"
+    >{{ restaurantTag }}</span>
         <div class="flex flex-wrap justify-start items-center -mx-4">
-            <div v-for="food in foods" :key="food.id" class="w-full md:w-1/3 px-2">
+            <div v-for="(food, index) in paginatedFoods" :key="index" class="w-full md:w-1/3 px-2">
                 <v-card :loading="loading" class="mx-auto my-3">
                     <v-img height="100" :src="food.image"></v-img>
 
                     <v-card-title>
                         {{ food.text }}
                         <v-spacer></v-spacer>
-                        <span class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2">$ {{ food.price }}</span>
+                        <span
+                            class="inline-block bg-red-200 rounded-full px-3 py-1 text-sm font-semibold text-red-700 mr-2"
+                        >$ {{ food.price }}</span>
                     </v-card-title>
 
                     <v-card-text>
@@ -24,6 +28,7 @@
                 </v-card>
             </div>
         </div>
+        <v-pagination v-model="currentPage" :length="totalPages" @input="changePage" />
         <v-snackbar v-model="snackbar" :timeout="2000">
             {{ snacktext }}
             <template v-slot:action="{ attrs }">
@@ -54,11 +59,18 @@ export default {
             loading: false,
             snackbar: false,
             snacktext: '',
+            itemsPerPage: 3,
+            currentPage: 1,
         };
     },
     computed: {
-        tagClass() {
-            return `inline-block bg-${this.restaurantTag.toLowerCase()}-200 rounded-full px-3 py-1 text-md font-semibold text-${this.restaurantTag.toLowerCase()}-700 mr-2`;
+        paginatedFoods() {
+            const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+            const endIndex = startIndex + this.itemsPerPage;
+            return this.foods.slice(startIndex, endIndex);
+        },
+        totalPages() {
+            return Math.ceil(this.foods.length / this.itemsPerPage);
         },
     },
     methods: {
@@ -68,6 +80,9 @@ export default {
             }, 200);
             this.snackbar = true;
             this.snacktext = '已添加到购物车!';
+        },
+        changePage(page) {
+            this.currentPage = page;
         },
     },
 };
