@@ -111,25 +111,25 @@ export default {
                 this.$store.commit('cart/removeAllProductsFromCart');
             }, 200);
             this.snackbar = true;
-            this.snacktext = 'Cart cleared successfully!';
+            this.snacktext = '购物车已清空！!';
         },
         removeItemFromCart(product) {
             setTimeout(() => {
                 this.$store.commit('cart/removeProductFromCart', product);
             }, 200);
             this.snackbar = true;
-            this.snacktext = 'Item removed from Cart!';
+            this.snacktext = '菜品已移除！';
         },
         decrementItem(product) {
             if (product.quantity === 1) {
                 this.snackbar = true;
-                this.snacktext = 'Item quantity cannot be reduced!';
+                this.snacktext = '菜品数量无法再减少！';
             } else {
                 setTimeout(() => {
                     this.$store.commit('cart/decrementItemQuantity', product);
                 }, 200);
                 this.snackbar = true;
-                this.snacktext = 'Item quantity reduced!';
+                this.snacktext = '菜品数量已减少！';
             }
         },
         incrementItem(product) {
@@ -137,7 +137,7 @@ export default {
                 this.$store.commit('cart/incrementItemQuantity', product);
             }, 200);
             this.snackbar = true;
-            this.snacktext = 'Item quantity incremented!';
+            this.snacktext = '菜品数量已减少！';
         }
     }
 }
