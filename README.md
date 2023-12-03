@@ -1,10 +1,9 @@
-# Food Order application using NuxtJS, Vuex, Vuetify and Tailwindcss
+# 食在工大——食堂订餐配送系统
 
-> A SPA built using NuxtJS, Vuex, Vuetify and Tailwindcss which demonstrates use of Vuex for ordering food.
+>“食在工大——食堂订餐配送系统”是基于Vue开发的Web应用系统，通过餐品展示、餐品订购、订单分配等模块实现即时、高效的订单配送功能。 
+>本系统旨在为校园订餐配送提供软件支持，以期解决学生日益增长的对美好饮食服务的需要与现系统不够实用不够完善的矛盾。
 
-[Live Demo](https://food-service-demo.netlify.app/)
-
-## Screenshots
+## 界面截图
 
 ![Image of Home Page Light Theme](/static/main-light.png)
 
@@ -14,33 +13,32 @@
 
 ![Image of Cart Page Light Theme](/static/cart-light.png)
 
-## Build Setup
+## 部署方法
 
-1. With Docker
-    - Build docker container
-
+1. 使用docker
+    - 建立docker镜像
     ```bash docker build -t npu-food .  ```
 
-    - Run container
+    - 建立docker容器
     ```bash docker run -it -p 5000:5000 npu-food```
 
-    - visit ``` localhost:5000```
+    - 访问 ``` localhost:5000```
 
-2. Without Docker
+2. 不使用docker
 
-Clone this repository and run:
+克隆此仓库后执行以下命令：
 
 ```bash
-# install dependencies
+# 安装依赖项
 $ npm install
 
-# serve with hot reload at localhost:3000
+# 在 localhost:3000 进行热重载服务
 $ npm run dev
 
-# build for production and launch server
+# 构建并启动
 $ npm run build
 $ npm run start
 
-# generate static project
+# 生成静态工程
 $ npm run generate
 ```

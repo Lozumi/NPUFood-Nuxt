@@ -1,10 +1,8 @@
 # STORE
 
-**This directory is not required, you can delete it if you don't want to use it.**
+此目录下包含Vuex商店信息.
+Vuex商店信息由Nuxt.js框架实现.
 
-This directory contains your Vuex Store files.
-Vuex Store option is implemented in the Nuxt.js framework.
+在此目录下创建文件将自动激活框架中的设置.
 
-Creating a file in this directory automatically activates the option in the framework.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/vuex-store).
+关于此目录的使用，更多信息可以参考 [这里](https://nuxtjs.org/guide/vuex-store).
