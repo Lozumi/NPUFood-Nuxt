@@ -13,10 +13,6 @@ export const state = () => ({
         {id: 10, tag: 'cloudFood', text:'盐水鸭', description:'不知道写什么了，放一点家乡美食吧', price:8.00 , image:'https://p.sda1.dev/14/526016ca66dc9a3de2f89a41f54e2350/盐水鸭.jpg'},
         {id: 11, tag: 'cloudFood', text:'蛋炒饭', description:'酱油炒饭，很香', price: 10.00 , image:'https://p.sda1.dev/14/dec63ab0f02847301d1f61df97bedaa0/蛋炒饭.jpg'},
 
-
-
-
-
     ]
 });
 
