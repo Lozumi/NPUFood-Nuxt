@@ -24,7 +24,7 @@
             </v-btn>
         </v-app-bar>
 
-        <v-main class="bg-fixed" style="background-image: url('/npu-motto.png'); background-size: 40%; background-position: left top;">
+        <v-main class="bg-fixed" style="background-image: url('./npu-motto.png'); background-size: 40%; background-position: left top;">
             <v-container>
                 <v-row class="justify-center">
                     <v-col cols="12">
