@@ -20,7 +20,7 @@
 2. Vuex: 版本4.1.0，Vue.js 应用程序的状态管理器。
 3. Nuxt.js: 版本 2.13.0，基于 Vue.js 的通用应用框架。
 4. Tailwind CSS: 版本3.3.5，实用程序优先的 CSS 框架。
-5. Node.js: 版本16.20.2，JavaScript 跨平台执行环境。
+5. Node.js: 版本14.21.3，JavaScript 跨平台执行环境。
 
 ### 依赖项
 
@@ -109,7 +109,11 @@
 
    - 访问 ``` localhost:5000```
 
-2. npm部署
+2. 编译部署
+
+   Node.js推荐版本：`v14.21.3`
+
+   注意：因`Nuxt.js`使用的`node.fibers`在`Node.js`的`v16`版本被废弃，故`Node.js`版本应小于`v16`。
 
 ```bash
 # 安装依赖项
