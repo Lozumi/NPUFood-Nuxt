@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-app-bar color="#3A8FB7" app absolute elevate-on-scroll>
-            <img src="/npu-logo.png" alt="NPU"  class="ml-2" style="width: 36px; height: 36px">
+            <img src="/npu-food/npu-logo.png" alt="NPU"  class="ml-2" style="width: 36px; height: 36px">
             <v-toolbar-title class="white--text text-center mx-2"><strong>食在工大</strong></v-toolbar-title>
             <img class="mr-2" src="../static/MdiFood.svg" alt="NPU Food" style="width: 24px; height: 24px">
             <v-spacer/>
@@ -24,7 +24,7 @@
             </v-btn>
         </v-app-bar>
 
-        <v-main class="bg-fixed" style="background-image: url('/npu-motto.png'); background-size: 40%; background-position: left top;">
+        <v-main class="bg-fixed" style="background-image: url('./npu-motto.png'); background-size: 40%; background-position: left top;">
             <v-container>
                 <v-row class="justify-center">
                     <v-col cols="12">

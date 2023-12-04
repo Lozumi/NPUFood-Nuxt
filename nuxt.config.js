@@ -1,5 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerPrefix='/npu-food/'
 export default {
     /*
     ** Nuxt rendering mode
@@ -21,7 +22,7 @@ export default {
             {hid: 'description', name: 'description', content: process.env.npm_package_description || ''}
         ],
         link: [
-            {rel: 'icon', type: 'image/x-icon', href: '../static/npu-logo.png'},
+            {rel: 'icon', type: 'image/x-icon', href: '/npu-logo.png'},
             {rel: 'stylesheet', defer: true, href: 'https://fonts.googleapis.com/css?family=Material+Icons'},
         ]
     },
@@ -88,6 +89,6 @@ export default {
         publicPath: ''
     },
     router:{
-        base: '/npu-food/'
+        base: routerPrefix
     }
 }
