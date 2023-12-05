@@ -137,7 +137,7 @@ export default {
                 this.$store.commit('cart/incrementItemQuantity', product);
             }, 200);
             this.snackbar = true;
-            this.snacktext = '菜品数量已减少！';
+            this.snacktext = '菜品数量已增加！';
         }
     }
 }
